@@ -14,6 +14,7 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrimengModule } from './primeng.module';
 import { MaterialModule } from './material.module';
+import { EntradaComponent } from './components/entrada/entrada.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MaterialModule } from './material.module';
     PersonaComponent,
     ProfileComponent,
     ProyectoComponent,
-    RegistroComponent
+    RegistroComponent,
+    EntradaComponent
   ],
   imports: [
     BrowserModule,
