@@ -1,0 +1,3 @@
+::ng-deep body .ui-dialog .ui-dialog-content {
+    overflow: initial;
+}

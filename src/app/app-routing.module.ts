@@ -12,12 +12,12 @@ import { InformeComponent } from 'src/app/components/informe/informe.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'persona', component: PersonaComponent },
+  { path: 'personas', component: PersonaComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'proyecto', component: ProyectoComponent },
+  { path: 'proyectos', component: ProyectoComponent },
   { path: 'registros', component: RegistroComponent },
-  { path: 'entrada', component: EntradaComponent },
-  { path: 'informe', component: InformeComponent },
+  { path: 'entradas', component: EntradaComponent },
+  { path: 'informes', component: InformeComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
