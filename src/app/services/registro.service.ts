@@ -11,8 +11,8 @@ import { Registro } from '../models/Registro';
 })
 export class RegistroService {
   // URL de donde obtenemos datos de la API_REST
-  // baseURL: string = "http://192.168.10.5/ebackend/api/registro";
-  baseURL: string = 'http://localhost:8090/api/registro';
+  baseURL: string = "http://192.168.10.5/ebackend/api/registro";
+  // baseURL: string = 'http://localhost:8090/api/registro';
 
   /**
    * Constructor del Servicio
