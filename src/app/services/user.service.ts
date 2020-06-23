@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const API_URL = "http://app.cdmservicios.com/ebackend/api/test/";
-// const API_URL = 'http://localhost:8090/api/test/';
+// const API_URL = "http://app.cdmservicios.com/ebackend/api/test/";
+const API_URL = 'http://localhost:8090/api/test/';
 
 /**
  * Servicio de prueba de la autenticacion AWT de la API_REST

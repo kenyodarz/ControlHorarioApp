@@ -16,8 +16,8 @@ body {
 }
 body {
   margin: 0;
-  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
-  font-family: Neusa, "Neusa Regular", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* font-family: Neusa, "Neusa Regular", sans-serif; */
 }
 
 html body .ui-calendar {
