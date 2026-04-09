@@ -1,6 +1,12 @@
 # ControlHorarioApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+Este proyecto se generó originalmente con [Angular CLI](https://github.com/angular/angular-cli) versión 9.1.3, y **ha sido migrado exitosamente a Angular 21**. 
+
+### 🚀 Actualización Reciente (Migración Angular 21)
+- Actualización mayor desde la versión 9 a la 21.
+- Refactorización de módulos obsoletos de PrimeNG.
+- Optimización de dependencias de compilación y limpieza de configuración CLI.
+- Configurado correctamente para soportar dependencias CommonJS como `file-saver` y `html2pdf.js`.
 
 ## Development server
 
