@@ -15,15 +15,13 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 import { InputMaskModule } from 'primeng/inputmask';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { PaginatorModule } from 'primeng/paginator';
-import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { MultiSelectModule } from 'primeng/multiselect';
-import { SidebarModule } from 'primeng/sidebar';
-import { DropdownModule } from 'primeng/dropdown';
-import { CalendarModule } from 'primeng/calendar';
+import { DrawerModule } from 'primeng/drawer';
+import { SelectModule } from 'primeng/select';
+import { DatePickerModule } from 'primeng/datepicker';
 
 const myModule = [
-  MessagesModule,
   MessageModule,
   PanelModule,
   MenubarModule,
@@ -38,9 +36,9 @@ const myModule = [
   ConfirmDialogModule,
   PaginatorModule,
   MultiSelectModule,
-  SidebarModule,
-  DropdownModule,
-  CalendarModule,
+  DrawerModule,
+  SelectModule,
+  DatePickerModule,
 ];
 
 @NgModule({

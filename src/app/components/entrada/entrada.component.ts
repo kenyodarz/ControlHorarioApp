@@ -24,7 +24,7 @@ import { ProyectoService } from 'src/app/services/proyecto.service';
 import { RegistroService } from 'src/app/services/registro.service';
 import { TokenStorageService } from 'src/app/services/token-storage.service';
 
-@Component({
+@Component({ standalone: false,
   selector: 'app-entrada',
   templateUrl: './entrada.component.html',
   styleUrls: ['./entrada.component.css'],

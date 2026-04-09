@@ -14,9 +14,9 @@ import { RegistroService } from 'src/app/services/registro.service';
 // Utilidades
 import * as jsPDF from 'jspdf';
 import 'jspdf-autotable';
-import * as html2pdf from 'html2pdf.js';
+import html2pdf from 'html2pdf.js';
 
-@Component({
+@Component({ standalone: false,
   selector: 'app-informe',
   templateUrl: './informe.component.html',
   styleUrls: ['./informe.component.css'],
@@ -345,26 +345,22 @@ export class InformeComponent implements OnInit {
   exportPdf(){
     let documento = document.getElementById('dt');
     let opciones = {
-      margin: [0.5, 0.5, 1, 0.5],
+      margin: [0.5, 0.5, 1, 0.5] as [number, number, number, number],
       filename: 'Informe.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
+      image: { type: 'jpeg' as 'jpeg' | 'png' | 'webp', quality: 0.98 },
       // html2canvas: { scale: 2 },
       jsPDF: {
         unit: 'cm',
         format: 'letter',
-        orientation: 'landscape',
+        orientation: 'landscape' as 'landscape' | 'portrait',
       },
     };
-    // Old monolithic-style usage:
-    // html2pdf(documento, opciones);
-    // New Promise-based usage:
-    // html2pdf().from(documento).set(opciones).save();
     html2pdf()
       .from(documento)
       .set(opciones)
       .toPdf()
       .get('pdf')
-      .then(function (pdf) {
+      .then(function (pdf: any) {
         // Colocamos en el Pie de Pagina # de la pagina
         var totalPages = pdf.internal.getNumberOfPages();
         for (let index = 0; index < totalPages; index++) {
@@ -378,7 +374,7 @@ export class InformeComponent implements OnInit {
             pdf.internal.pageSize.getHeight() - 0.5
           );
         }
-      })
-      .save();
+        pdf.save('Informe.pdf');
+      });
   }
 }

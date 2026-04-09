@@ -12,7 +12,7 @@ import { Persona } from 'src/app/models/Persona';
 import { PersonaService } from 'src/app/services/persona.service';
 import { AuthService } from 'src/app/services/auth.service';
 
-@Component({
+@Component({ standalone: false,
   selector: 'app-persona',
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css'],

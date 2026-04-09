@@ -10,7 +10,7 @@ import { AuthService } from "src/app/services/auth.service";
 import { Proyecto } from "src/app/models/Proyecto";
 
 
-@Component({
+@Component({ standalone: false,
   selector: 'app-proyecto',
   templateUrl: './proyecto.component.html',
   styleUrls: ['./proyecto.component.css'],

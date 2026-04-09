@@ -29,6 +29,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 // Providers
 import { authInterceptorProviders } from 'src/app/helpers/auth.interceptor';
+import { providePrimeNG } from 'primeng/config';
+import Aura from '@primeuix/themes/aura';
 
 //Services
 import { MessageService, ConfirmationService } from 'primeng/api';
@@ -60,6 +62,11 @@ import { Table, TableService } from 'primeng/table';
     HttpClientModule
   ],
   providers: [
+    providePrimeNG({
+        theme: {
+            preset: Aura
+        }
+    }),
     MessageService,
     ConfirmationService,
     authInterceptorProviders,

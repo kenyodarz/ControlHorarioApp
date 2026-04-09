@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 // Servicios
 import { UserService } from 'src/app/services/user.service';
 
-@Component({
+@Component({ standalone: false,
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
